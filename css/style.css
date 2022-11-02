@@ -1,0 +1,352 @@
+/*
+************************
+    ### PARAMETERS ###
+************************
+*/
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&display=swap');
+
+
+:root {
+    --color0: white;
+    --color1: #CCCCCC;
+    --color2: #FFFF00;
+    --color3: #444444;
+    
+    --font0: Arial, Verdana, Helvetica, sans-serif;
+    --font1: 'Roboto', sans-serif;
+    --font2: 'Fjalla One', sans-serif;
+}
+
+/*
+************************
+    ### GENERAL ###
+************************
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font1);
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+/*
+************************
+     ### HEADER ###
+************************
+*/
+
+header{
+    margin-top: 40px;
+}
+
+.header-container-01{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: var(--color2);
+    text-transform: uppercase;
+}
+
+.header-container-01 h1{
+    font-size: 1.4em;
+}
+
+.header-container-02{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: var(--color3);
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu > li{
+    display: inline;
+    margin: 0px 25px;
+}
+
+.menu > li > a{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.header-container-03{
+    background: linear-gradient(90deg, transparent 8.2%, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,0.7) 91.6%, transparent 0%), url(../img/talking_heads-speaking_in_tongues.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 300px;
+}
+
+.header-container-03 > img{
+    width: 225px;
+    position: absolute;
+    top: 12.5%;
+    right: 10%;
+}
+
+.header-container-03 > h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: var(--font2);
+    color: var(--color2);
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.header-container-03 > h2{
+    text-transform: uppercase;
+    color: var(--color0);
+    position: absolute;
+    top: 33%;
+    left: 10%;
+}
+
+.header-container-03 > h3{
+    text-transform: uppercase;
+    font-family: var(--font1);
+    color: var(--color1);
+    position: absolute;
+    top: 48%;
+    left: 10%;
+}
+
+
+/*
+************************
+     ### MAIN ###
+************************
+*/
+
+
+/* 
+    ### ARTICLE ### 
+*/
+article{
+    border-bottom: solid var(--color2);
+    height: 1100px;
+    width: 74%;
+    min-width: 700px;
+    margin: auto;
+
+}
+
+.section-container{
+    text-transform: uppercase;
+    position: relative;
+    width: 500px;
+}
+
+.section-wrap{
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    left: -8%;
+}
+
+.section-container .section-wrap > section:nth-child(odd){
+    position: absolute;
+}
+
+.section-container .section-wrap > section:nth-child(even){
+    position: absolute;
+    left: 40px;
+}
+
+.section-container .section-wrap > section:nth-child(2){
+    top: 250px;
+}
+
+.section-container .section-wrap > section:nth-child(3){
+    top: 500px;
+}
+
+.section-container .section-wrap > section:nth-child(4){
+    top: 750px;
+}
+
+.section-container .section-wrap > section > h2{
+    background-color: var(--color2);
+    padding: 12px;
+    width: 40%;
+    text-align: center;
+    font-family: var(--font2);
+}
+
+.section-container .section-wrap > section > p{
+    border-left: solid var(--color2) 5px;
+    padding: 20px;
+}
+
+/* 
+    ### SIDE ### 
+*/
+.side-container{
+    position: relative;
+}
+
+.side-container > aside {
+    position: absolute;
+    width: 35%;
+    min-width: 380px;
+    right: -4%;
+    top: 25px;
+}
+
+.side-container > aside > h2 {
+    background-color: var(--color2);
+    text-transform: uppercase;
+    padding: 20px;
+    font-family: var(--font2);
+}
+
+.side-container > aside > p {
+    background-color: var(--color3);
+    color: var(--color0);
+    padding: 20px;
+}
+
+.side-container > aside > blockquote {
+    background-color: var(--color3);
+    color: var(--color0);
+    padding: 20px 60px;
+}
+
+.side-container > aside > blockquote > sup > a {
+    color: var(--color2);
+}
+
+.side-container > aside > div {
+    background-color: var(--color0);
+    width: 90%;
+    height: 4px;
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+}
+
+.side-container > aside > section {
+    background-color: var(--color3);
+    text-align: center;
+    padding: 20px;
+}
+
+.side-container > aside > section > iframe {
+    width: 100%;
+}
+
+/*
+************************
+     ### MAIN ###
+************************
+*/
+footer{
+    width: 76%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+footer section:nth-child(2){
+    text-align: center;
+    padding: 15px;
+}
+
+#cite1{
+    font-style: normal;
+}
+
+#cite1 a{
+    background-color: var(--color2);
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    padding: 3px;
+}
+
+.footer-links a img{
+    max-width: 40px;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+
+/*
+************************
+  ### MEDIA QUERIES ###
+************************
+*/
+
+@media screen and (max-width: 1060px){
+    
+    .header-container-03{
+        height: 450px;
+    }
+
+    .header-container-03 > img{
+        width: 225px;
+        position: absolute;
+        top: 40%;
+        left: 35%;
+    }
+
+    .header-container-03 > h1{
+        top: 5%;
+        left: 31%;
+        font-size: 1.4em;
+    }
+    
+    .header-container-03 > h2{
+        top: 16%;
+        left: 38%;
+    }
+    
+    .header-container-03 > h3{
+
+        top: 30%;
+        left: 33.3%;
+    }
+
+    article{
+        height: 2000px;
+    }
+
+    .section-wrap{
+        left: 40%;
+    }
+
+    .side-container > aside {
+        left: 25%;
+        top: 1100px;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+
+    
+}
